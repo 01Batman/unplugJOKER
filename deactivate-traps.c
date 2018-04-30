@@ -30,8 +30,6 @@
 
 static DEFINE_MUTEX(udelay_test_lock);
 static struct dentry *udelay_test_debugfs_file;
-static int udelay_test_usecs;
-static int udelay_test_iterations = DEFAULT_ITERATIONS;
 
 static int udelay_test_single(struct seq_file *s, int usecs, uint32_t iters)
 {
